@@ -1,0 +1,25 @@
+:root{
+  --white:#fcfcfc;
+  --orange:#eb9d0c;
+  --border:#ccc;
+}
+
+body{
+  background-color:var(--white);
+  font-size:18px;
+  color:#777;
+}
+hr{
+  border-top:solid 1px var(--border);
+  margin-top:var(--margins);
+  margin-bottom:var(--margins);
+}
+
+a{
+  transition:color 0.2s ease;
+  color:var(--orange);
+}
+a:hover{
+  text-decoration:none;
+  color:#916007;
+}

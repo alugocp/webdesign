@@ -1,0 +1,28 @@
+:root{
+  --top-height:50px;
+  --margins:15px;
+  --sides:250px;
+}
+
+#top{
+  border-bottom:solid 3px var(--orange);
+  background-image:var(--graffiti);
+  background-position:0px 200px;
+  height:var(--top-height);
+  position:absolute;
+  width:100%;
+  left:0%;
+  top:0%;
+}
+
+#tagline{
+  letter-spacing:4px;
+}
+
+#content{
+  padding:var(--margins);
+  top:var(--top-height);
+  right:var(--margins);
+  position:absolute;
+  left:var(--sides);
+}

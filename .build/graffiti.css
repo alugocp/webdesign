@@ -1,0 +1,18 @@
+:root{
+  --graffiti:url("../res/graffiti.png");
+}
+
+.large-text{
+  font-weight:900;
+  font-size:120px;
+  color:var(--orange);
+  text-shadow:-2px 2px 4px #777;
+}
+
+#bottom{
+  background-image:var(--graffiti);
+  position:absolute;
+  height:300px;
+  width:100%;
+  left:0px;
+}
