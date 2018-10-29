@@ -8,7 +8,7 @@ SiteContent.prototype.getContent=function(){
       ]),this.bulleted([
         "Google App Engine","Shiny R","PHP"
       ]))
-    ],*/
+    ],
     "previous":[
       this.heading("Previous Works"),
       this.twoColumns(this.bulleted([
@@ -19,7 +19,7 @@ SiteContent.prototype.getContent=function(){
         this.link("The Hridaya app","https://nishanthnair.shinyapps.io/heartdisease/"),
         this.link("My website","http://alexlugo.net")
       ]))
-    ],
+    ],*/
     "browsers":[
       this.heading("Supported Browsers"),
       "I guarantee that my sites work on the following browsers:",
