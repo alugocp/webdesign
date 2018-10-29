@@ -1,13 +1,15 @@
 :root{
-  --white:#fcfcfc;
+  --lightGray:#e2e2e2;
   --orange:#eb9d0c;
+  --white:#fcfcfc;
+  --gray:#515151;
   --border:#ccc;
 }
 
 body{
   background-color:var(--white);
   font-size:18px;
-  color:#777;
+  color:var(--gray);
 }
 hr{
   border-top:solid 1px var(--border);

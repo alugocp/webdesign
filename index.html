@@ -49,28 +49,66 @@
     </div>
     <span class="row"><hr></span>
 
-    <!-- Content -->
+    <!-- Compartments -->
     <div class="row">
       <div class="col-md-12">
         <div class="compartment component tech"><div class="row heading">Technologies Used</div>
 <div class="row">
   <div class="col-md-12">
-    <b>TODO: Replace with streamlined listing module</b><br><br>
-    Some of the languages and frameworks I&apos;m familiar with:<br>
+    Over my many years of web development experience I&apos;ve worked with various languages, platforms and frameworks.
+    Below you&apos;ll find all of the tools I&apos;ve used for web development and how comfortable I am using them.
+    <br><br>
     <div class="row">
       <span class="col-md-6">
-        &#x2022; Bootstrap<br>
-        &#x2022; jQuery<br>
-        &#x2022; Lodr
+        <div class="listitem guru">WebStatic</div>
+        <div class="listitem guru">Lodr</div>
+        <div class="listitem guru">jQuery</div>
+        <div class="listitem okay">Bootstrap</div>
+        <div class="listitem okay">Flask</div>
       </span>
       <span class="col-md-6">
-        &#x2022; Google App Engine<br>
-        &#x2022; Shiny R<br>
-        &#x2022; PHP
+        <div class="listitem okay">Shiny R</div>
+        <div class="listitem okay">PHP</div>
+        <div class="listitem noob">Google App Engine</div>
+        <div class="listitem noob">WordPress</div>
+        <div class="listitem noob">ASP.NET (C#)</div>
       </span>
     </div>
   </div>
 </div>
+
+<style>
+
+  .component.tech .listitem{
+    background-color:var(--lightGray);
+    border-radius:25px;
+    margin-bottom:5px;
+    position:relative;
+    font-weight:bold;
+    padding:10px;
+  }
+  .component.tech .listitem::after{
+    color:var(--white);
+    border-radius:25px;
+    position:absolute;
+    padding:5px;
+    right:5px;
+    top:5px;
+  }
+  .component.tech .listitem.guru::after{
+    background-color:#23d108;
+    content:"Master";
+  }
+  .component.tech .listitem.okay::after{
+    background-color:#fcc316;
+    content:"Novice";
+  }
+  .component.tech .listitem.noob::after{
+    background-color:#e82604;
+    content:"Noob";
+  }
+
+</style>
 </div>
       </div>
     </div>
