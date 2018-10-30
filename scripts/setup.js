@@ -1,8 +1,8 @@
 $(window).resize(function(){
-  // bottom graffiti
+  // Bottom graffiti
   $("#bottom").css("top",$("#content").offset().top+$("#content").height()+100);
 
-  // compartment heading backgrounds
+  // Compartment heading backgrounds
   $(".heading").each(function(){
     var yOff=-325+$(this).height();
     $(this).css("background-position","-500px "+yOff+"px");
@@ -10,7 +10,7 @@ $(window).resize(function(){
 });
 
 $(document).ready(function(){
-  // sidebar positioning
+  // Sidebar positioning
   $(".side .button").click(function(){
     $(".side .button").attr("lock",function(){
       return $(".side .button").attr("lock")=="true"?"false":"true";
@@ -32,20 +32,13 @@ $(document).ready(function(){
     }
   });
 
-  // site content
-  var content=new SiteContent();
-  content.init();
-
-  // sidebar content
-  var span=$("<div></div>");
-  $(".heading").each(function(i){
-    var h=$(this);
-    span.append($("<a href=\"#"+h.parent().attr("id")+"\">"+h.text()+"</a>"));
-    if(i!=$(".heading").length-1){
-      span.append("<hr>");
-    }
+  // Sidebar content
+  $(".mid a").each(function(){
+    const target=$(this).attr("target");
+    $(this).click(function(){
+      $("html,body").animate({scrollTop:$(target).offset().top-50},250);
+    });
   });
-  $(".mid").html(span.html());
   $(".mid").css("--content-height",$(".mid").outerHeight());
 
   $(window).trigger("resize");
