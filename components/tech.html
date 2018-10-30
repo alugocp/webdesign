@@ -30,10 +30,10 @@
     <br><p>
       Just to clarify what the labels in this section mean:
       <ul>
-        <li>Master means I know the technology inside and out. A couple of these technologies are actually my own creations.</li>
-        <li>Novice are software that I've used in the past but perhaps not to its fullest extent.</li>
-        <li>Noob means that I'm just starting out with a particular framework, or I've used it minimally in past projects.</li>
-        <li>Todo means that learning it is on my todo list.</li>
+        <li><span style="color:var(--green)">Master</span> means I know the technology inside and out. A couple of these technologies are actually my own creations.</li>
+        <li><span style="color:var(--orange)">Novice</span> are software that I've used in the past but perhaps not to its fullest extent.</li>
+        <li><span style="color:var(--red)">Noob</span> means that I'm just starting out with a particular framework, or I've used it minimally in past projects.</li>
+        <li><span style="color:var(--none)">Todo</span> means that learning it is on my todo list.</li>
       </ul>
     </p>
     <p>
@@ -44,6 +44,13 @@
 </div>
 
 <style>
+
+  .tech{
+    --orange:#fcc316;
+    --green:#23d108;
+    --none:#a8a8a8;
+    --red:#e82604;
+  }
 
   .listitem{
     background-color:var(--lightGray);
@@ -62,19 +69,19 @@
     top:5px;
   }
   .listitem.guru::after{
-    background-color:#23d108;
+    background-color:var(--green);
     content:"Master";
   }
   .listitem.okay::after{
-    background-color:#fcc316;
+    background-color:var(--orange);
     content:"Novice";
   }
   .listitem.noob::after{
-    background-color:#e82604;
+    background-color:var(--red);
     content:"Noob";
   }
   .listitem.todo::after{
-    background-color:#a8a8a8;
+    background-color:var(--none);
     content:"Todo";
   }
 
