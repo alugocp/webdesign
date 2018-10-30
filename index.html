@@ -7,8 +7,6 @@
   <!-- custom -->
   <meta charset="utf-8">
   <title>Alex Lugo: Web Designer</title>
-  <!--<script src="site-content.js"></script>
-  <script src="json-content.js"></script>-->
   <script src="setup.js"></script>
   <link rel="stylesheet" href="color-scheme.css">
   <link rel="stylesheet" href="outline.css">
@@ -18,8 +16,8 @@
 </head>
 <body>
   <!-- Graffiti ends -->
-  <span id="top"></span>
-  <span id="bottom"></span>
+  <div id="top"></div>
+  <div id="bottom"></div>
 
   <!-- Sidebar -->
   <span class="side">
@@ -32,7 +30,8 @@
         <a target=".browsers">Supported Browsers</a><hr>
         <a target=".pricing">Pricing</a><hr>
         <a target=".tech">Technology Used</a><hr>
-        <a target=".contact">Contact</a>
+        <a target=".contact">Contact Me</a><hr>
+        <a target=".platforms">Built With</a>
       </div>
     </div>
     <div class="bot"></div>
@@ -47,7 +46,7 @@
 
     <!-- Welcome -->
     <div class="row">
-      <img class="profile-pic" src="res/me.jpg">
+      <img class="profile-pic" src="res/jungle.jpg">
       <p>
         Hit me up if you want a high-quality website built quick.
         I communicate directly with my clients to design sites perfectly in tune with their vision.
@@ -59,6 +58,7 @@
         In addition to building websites, I also design and create custom logos.
         This is optional and does not come at any extra charge to the client.
         I do not provide hosting services at this time.
+        I can build any sort of server you want me to, but I can&apos;t pay for hosting or provide you with my own hosting service.
       </p>
     </div>
     <span class="row"><hr></span>
@@ -99,6 +99,10 @@
         <div class="compartment component browsers"><div class="row heading">Supported Browsers</div>
 <div class="row">
   <div class="col-md-12">
+    <p>
+      Like any good web developer, I design my sites for the major modern browsers.
+      I don&apos;t usually support Microsoft browsers (IE is a nightmare and Edge is a joke).
+    </p>
     <p>I guarantee that my sites work on the following browsers:</p>
     <br>
     <div class="row">
@@ -126,6 +130,9 @@
 </div>
 
 <style>
+  .component.browsers .row .col-md-3:not(:last-of-type){
+    border-right:solid 1px var(--border);
+  }
   .component.browsers .row .col-md-3{
     text-align:center;
   }
@@ -163,6 +170,14 @@
     </p>
   </div>
 </div>
+
+<style>
+
+  .component.pricing .row .col-md-6:first-of-type{
+    border-right:solid 1px var(--border);
+  }
+
+</style>
 </div>
       </span>
     </span>
@@ -201,10 +216,10 @@
     <br><p>
       Just to clarify what the labels in this section mean:
       </p><ul>
-        <li>Master means I know the technology inside and out. A couple of these technologies are actually my own creations.</li>
-        <li>Novice are software that I&apos;ve used in the past but perhaps not to its fullest extent.</li>
-        <li>Noob means that I&apos;m just starting out with a particular framework, or I&apos;ve used it minimally in past projects.</li>
-        <li>Todo means that learning it is on my todo list.</li>
+        <li><span style="color:var(--green)">Master</span> means I know the technology inside and out. A couple of these technologies are actually my own creations.</li>
+        <li><span style="color:var(--orange)">Novice</span> are software that I&apos;ve used in the past but perhaps not to its fullest extent.</li>
+        <li><span style="color:var(--red)">Noob</span> means that I&apos;m just starting out with a particular framework, or I&apos;ve used it minimally in past projects.</li>
+        <li><span style="color:var(--none)">Todo</span> means that learning it is on my todo list.</li>
       </ul>
     <p></p>
     <p>
@@ -215,6 +230,13 @@
 </div>
 
 <style>
+
+  .tech{
+    --orange:#fcc316;
+    --green:#23d108;
+    --none:#a8a8a8;
+    --red:#e82604;
+  }
 
   .component.tech .listitem{
     background-color:var(--lightGray);
@@ -233,19 +255,19 @@
     top:5px;
   }
   .component.tech .listitem.guru::after{
-    background-color:#23d108;
+    background-color:var(--green);
     content:"Master";
   }
   .component.tech .listitem.okay::after{
-    background-color:#fcc316;
+    background-color:var(--orange);
     content:"Novice";
   }
   .component.tech .listitem.noob::after{
-    background-color:#e82604;
+    background-color:var(--red);
     content:"Noob";
   }
   .component.tech .listitem.todo::after{
-    background-color:#a8a8a8;
+    background-color:var(--none);
     content:"Todo";
   }
 
@@ -256,7 +278,7 @@
     <span class="row"><hr></span>
     <span class="row">
       <span class="col-md-6">
-        <div class="compartment component contact"><div class="row heading">Contact</div>
+        <div class="compartment component contact"><div class="row heading">Contact Me</div>
 <div class="row">
   <div class="col-md-12">
     <p>
@@ -292,13 +314,68 @@
       It&apos;s best to approach me on Twitter or Facebook.
       I don&apos;t check the email given above that often, but if you have a serious request I&apos;ll give you my main email.
     </p>
+    <p>
+      You should expect me to Google you if you make a request for a site.
+      I like to know what my clients stand for and why they need something built.
+    </p>
   </div>
 </div>
 
 <style>
+  .component.contact .row .col-md-3:not(:last-of-type){
+    border-right:solid 1px var(--border);
+  }
   .component.contact .row .col-md-3{
     text-align:center;
   }
+</style>
+</div>
+      </span>
+      <span class="col-md-6">
+        <div class="compartment component platforms"><div class="row heading">Built With</div>
+<div class="row">
+  <div class="col-md-12">
+    <p>
+      Because I&apos;m a sucker for crazy logos and iconography, here&apos;s a list of all the frameworks I used to create this website:
+    </p>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="res/icons/webstatic.png" title="WebStatic">
+      </div>
+      <div class="col-md-4">
+        <img src="res/icons/bootstrap.svg" title="Bootstrap">
+      </div>
+      <div class="col-md-4">
+        <img src="res/icons/jquery.svg" title="jQuery">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="res/icons/javascript.svg" title="JavaScript">
+      </div>
+      <div class="col-md-4">
+        <img src="res/icons/html5.svg" title="HTML5">
+      </div>
+      <div class="col-md-4">
+        <img src="res/icons/css3.svg" title="CSS3">
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+  .component.platforms .row .col-md-4:not(:last-child){
+    border-right:solid 1px var(--border);
+  }
+  .component.platforms .row .col-md-4{
+    text-align:center;
+  }
+  .component.platforms img{
+    height:75px;
+  }
+
 </style>
 </div>
       </span>
