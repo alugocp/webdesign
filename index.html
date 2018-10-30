@@ -1,14 +1,14 @@
 <!DOCTYPE html><html><head><!-- Built with WebStatic v1 -->
   <!-- Bootstrap/jQuery -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="libs/bootstrap.min.css">
+  <script src="libs/jquery.min.js"></script>
+  <script src="libs/bootstrap.min.js"></script>
 
   <!-- custom -->
   <meta charset="utf-8">
   <title>Alex Lugo: Web Designer</title>
-  <script src="site-content.js"></script>
-  <script src="json-content.js"></script>
+  <!--<script src="site-content.js"></script>
+  <script src="json-content.js"></script>-->
   <script src="setup.js"></script>
   <link rel="stylesheet" href="color-scheme.css">
   <link rel="stylesheet" href="outline.css">
@@ -23,10 +23,19 @@
 
   <!-- Sidebar -->
   <span class="side">
-    <div class="top"></div>
-    <div class="mid"></div>
-    <div class="bot"></div>
     <span class="button" lock="true"></span>
+    <div class="top"></div>
+    <div class="mid">
+      <div>
+        <a target="#top">Home</a><hr>
+        <a target=".previous">Previous Works</a><hr>
+        <a target=".browsers">Supported Browsers</a><hr>
+        <a target=".pricing">Pricing</a><hr>
+        <a target=".tech">Technology Used</a><hr>
+        <a target=".contact">Contact</a>
+      </div>
+    </div>
+    <div class="bot"></div>
   </span>
 
   <span id="content" class="container-fluid">
@@ -39,41 +48,169 @@
     <!-- Welcome -->
     <div class="row">
       <img class="profile-pic" src="res/me.jpg">
-      <div>
+      <p>
         Hit me up if you want a high-quality website built quick.
         I communicate directly with my clients to design sites perfectly in tune with their vision.
         I can craft a website of any design imaginable or otherwise.
         My prices are always negotiable and will be decided upon after I hear what kind of site you want.
         Some jobs may take more time or money than others if I need to learn a new technology.
-      </div>
+      </p>
+      <p>
+        In addition to building websites, I also design and create custom logos.
+        This is optional and does not come at any extra charge to the client.
+        I do not provide hosting services at this time.
+      </p>
     </div>
     <span class="row"><hr></span>
 
     <!-- Compartments -->
     <div class="row">
       <div class="col-md-12">
+        <div class="compartment component previous"><div class="row heading">Previous Works</div>
+<div class="row">
+  <div class="col-md-12">
+    I&apos;ve built multiple websites for both myself and a wide range of clientelle.
+    Here are a few of my favorites:<br><br>
+
+    <div class="row">
+      <span class="col-md-6">
+        <ul>
+          <li><a target="_blank" href="http://www.chriscobbs.com">Chris Cobbs&apos;s website</a></li>
+          <li><a target="_blank" href="http://alexlugo.net/toolbox">Toolbox</a></li>
+          <li><a target="_blank" href="http://alugocp.github.io/ws-page">WebStatic</a></li>
+        </ul>
+      </span>
+      <span class="col-md-6">
+        <ul>
+          <li><a target="_blank" href="http://alexlugo.net">My personal website</a></li>
+          <li><a target="_blank" href="https://umiacs.umd.edu/~alugocp">My UMD site</a></li>
+          <li>This site (go figure, huh?)</li>
+        </ul>
+      </span>
+    </div>
+  </div>
+</div>
+</div>
+      </div>
+    </div>
+    <span class="row"><hr></span>
+    <span class="row">
+      <span class="col-md-6">
+        <div class="compartment component browsers"><div class="row heading">Supported Browsers</div>
+<div class="row">
+  <div class="col-md-12">
+    <p>I guarantee that my sites work on the following browsers:</p>
+    <br>
+    <div class="row">
+      <div class="col-md-3">
+        <img class="browser" title="Firefox" src="res/icons/firefox.png">
+      </div>
+      <div class="col-md-3">
+        <img class="browser" title="Chrome" src="res/icons/chrome.png">
+      </div>
+      <div class="col-md-3">
+        <img class="browser" title="Opera" src="res/icons/opera.png">
+      </div>
+      <div class="col-md-3">
+        <img class="browser" title="Safari" src="res/icons/safari.png">
+      </div>
+    </div>
+    <br>
+    <p>
+      If you want your site guaranteed to work on Internet Explorer or any other browser, you will need to let me know.
+      The same goes for browsers on mobile devices.
+      During standard testing I open my sites in the four browsers listed above for different window sizes and zoom factors.
+      I do not test on mobile unless specifically told to do so.
+    </p>
+  </div>
+</div>
+
+<style>
+  .component.browsers .row .col-md-3{
+    text-align:center;
+  }
+</style>
+</div>
+      </span>
+      <span class="col-md-6">
+        <div class="compartment component pricing"><div class="row heading">Pricing</div>
+<div class="row">
+  <div class="col-md-12">
+    <p>
+      I&apos;m flexible with pricing.
+      The baseline for a standard website is $300, but this can be lowered provided you have a good reason.
+    </p>
+    <p>The cost of your site will increase if I have to do any of the following:</p>
+    <div class="row">
+      <div class="col-md-6">
+        <ul>
+          <li>Support a browser I don&apos;t normally support</li>
+          <li>Make a mobile version</li>
+          <li>Build a server</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li>Implement lots of front-end scripting</li>
+          <li>Rub my tummy and pat my head, or vice-versa</li>
+        </ul>
+      </div>
+    </div>
+    <p>
+      Single-page and static sites will be significantly cheaper than large web applications.
+      I don&apos;t charge extra for having to learn a new framework or platform only if I&apos;ve been wanting to learn it anyway.
+      Clients are expected to pay for hosting after development is done (you may have complete control over where your site is hosted).
+    </p>
+  </div>
+</div>
+</div>
+      </span>
+    </span>
+    <span class="row"><hr></span>
+    <div class="row">
+      <div class="col-md-12">
         <div class="compartment component tech"><div class="row heading">Technologies Used</div>
 <div class="row">
   <div class="col-md-12">
-    Over my many years of web development experience I&apos;ve worked with various languages, platforms and frameworks.
-    Below you&apos;ll find all of the tools I&apos;ve used for web development and how comfortable I am using them.
-    <br><br>
+    <p>
+      Over my many years of web development experience I&apos;ve worked with various languages, platforms and frameworks.
+      Below you&apos;ll find all of the tools I&apos;ve used for web development and how comfortable I am using them.
+    </p><br>
     <div class="row">
       <span class="col-md-6">
         <div class="listitem guru">WebStatic</div>
         <div class="listitem guru">Lodr</div>
         <div class="listitem guru">jQuery</div>
-        <div class="listitem okay">Bootstrap</div>
+        <div class="listitem guru">Bootstrap</div>
+        <div class="listitem guru">Shiny R</div>
         <div class="listitem okay">Flask</div>
+        <div class="listitem okay">PHP</div>
+        <div class="listitem okay">MySQL</div>
       </span>
       <span class="col-md-6">
-        <div class="listitem okay">Shiny R</div>
-        <div class="listitem okay">PHP</div>
         <div class="listitem noob">Google App Engine</div>
         <div class="listitem noob">WordPress</div>
         <div class="listitem noob">ASP.NET (C#)</div>
+        <div class="listitem noob">MongoDB</div>
+        <div class="listitem todo">CSS Grid</div>
+        <div class="listitem todo">WebAssembly</div>
+        <div class="listitem todo">Serverless</div>
+        <div class="listitem todo">Angular</div>
       </span>
     </div>
+    <br><p>
+      Just to clarify what the labels in this section mean:
+      </p><ul>
+        <li>Master means I know the technology inside and out. A couple of these technologies are actually my own creations.</li>
+        <li>Novice are software that I&apos;ve used in the past but perhaps not to its fullest extent.</li>
+        <li>Noob means that I&apos;m just starting out with a particular framework, or I&apos;ve used it minimally in past projects.</li>
+        <li>Todo means that learning it is on my todo list.</li>
+      </ul>
+    <p></p>
+    <p>
+      These do not represent every framework, platform and server-side language I have developed in.
+      Listed above are just the most well-known and widely-used technologies.
+    </p>
   </div>
 </div>
 
@@ -107,48 +244,63 @@
     background-color:#e82604;
     content:"Noob";
   }
+  .component.tech .listitem.todo::after{
+    background-color:#a8a8a8;
+    content:"Todo";
+  }
 
 </style>
 </div>
       </div>
     </div>
     <span class="row"><hr></span>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="compartment component previous"><div class="row heading">Previous Works</div>
+    <span class="row">
+      <span class="col-md-6">
+        <div class="compartment component contact"><div class="row heading">Contact</div>
 <div class="row">
   <div class="col-md-12">
-    I&apos;ve built multiple websites for both myself and a wide range of clientelle.
-    Here are a few of my favorites:<br><br>
-    
+    <p>
+      Find me on social media, <a href="mailto:alugocp@aim.com">email me</a>,
+      or look at my <a href="http://alexlugo.net" target="_blank">resume</a>.
+    </p>
+    <br>
     <div class="row">
-      <span class="col-md-6">
-        &#x2022; <a href="http://www.chriscobbs.com">Chris Cobbs&apos;s website</a><br>
-        &#x2022; <a href="http://alexlugo.net/toolbox">Toolbox</a><br>
-        &#x2022; This site (go figure, huh?)
-      </span>
-      <span class="col-md-6">
-        &#x2022; <a href="http://alexlugo.net">My personal website</a>
-      </span>
+      <div class="col-md-3">
+        <a href="https://www.facebook.com/alex.lugo.5621" title="Facebook" target="_blank">
+          <img class="icon" src="res/icons/facebook.png">
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="https://twitter.com/alugoc" title="Twitter" target="_blank">
+          <img class="icon" src="res/icons/twitter.png">
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="https://www.linkedin.com/in/alex-lugo-0938707b/" title="LinkedIn" target="_blank">
+          <img class="icon" src="res/icons/linkedin.png">
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="https://www.instagram.com/alugocp1/" title="Instagram" target="_blank">
+          <img class="icon" src="res/icons/instagram.png">
+        </a>
+      </div>
+
     </div>
+    <br>
+    <p>
+      It&apos;s best to approach me on Twitter or Facebook.
+      I don&apos;t check the email given above that often, but if you have a serious request I&apos;ll give you my main email.
+    </p>
   </div>
 </div>
+
+<style>
+  .component.contact .row .col-md-3{
+    text-align:center;
+  }
+</style>
 </div>
-      </div>
-    </div>
-    <span class="row"><hr></span>
-    <span class="row">
-      <span class="col-md-6">
-        <div class="compartment" id="browsers"></div>
-      </span>
-      <span class="col-md-6">
-        <div class="compartment" id="pricing"></div>
-      </span>
-    </span>
-    <span class="row"><hr></span>
-    <span class="row">
-      <span class="col-md-6">
-        <div class="compartment" id="contact"></div>
       </span>
     </span>
   </span>
