@@ -18,6 +18,9 @@
   margin-top:5px;
   margin-bottom:5px;
 }
+.side a{
+  font-weight:bold;
+}
 
 /* segments */
 .top,.bot{
@@ -34,10 +37,10 @@
   background-position:0px 175px;
 }
 .mid{
+  padding:8px;
   --content-height:auto;
-  padding:5px;
-  padding-top:calc(5px + var(--radius));
   transition:height 0.5s ease,padding 0.5s ease;
+  padding-top:var(--radius);
   background-color:var(--white);
   height:var(--content-height);
   white-space:nowrap;
@@ -61,10 +64,10 @@
   left:calc(var(--x) + calc(25px - var(--rad)));
   top:calc(var(--y) + calc(25px - var(--rad)));
   transition:background-color 0.2s ease;
-  width:calc(var(--rad) * 2);
-  height:calc(var(--rad) * 2);
   background-color:var(--white);
-  border:solid 3px black;
+  height:calc(var(--rad) * 2);
+  width:calc(var(--rad) * 2);
+  border:solid 3px #222;
   border-radius:100%;
   position:fixed;
 }
