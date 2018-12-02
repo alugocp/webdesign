@@ -1,0 +1,79 @@
+/* general */
+.side{
+  --width:200px;
+  --radius:25px;
+  --y:calc(var(--top-height) + 25px);
+  --x:10px;
+
+  position:fixed;
+  left:var(--x);
+  top:var(--y);
+  width:var(--width);
+  box-shadow:-1px 1px 2px #555;
+  border-radius:0px 25px 25px 25px;
+  transition:all 0.5s ease;
+  background-color:var(--white);
+}
+.side hr{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.side a{
+  font-weight:bold;
+}
+
+/* segments */
+.top,.bot{
+  background-image:var(--graffiti);
+  height:var(--radius);
+}
+.top{
+  border-top-right-radius:var(--radius);
+  background-position:0px 200px;
+}
+.bot{
+  border-bottom-right-radius:var(--radius);
+  border-bottom-left-radius:var(--radius);
+  background-position:0px 175px;
+}
+.mid{
+  padding:8px;
+  --content-height:auto;
+  transition:height 0.5s ease,padding 0.5s ease;
+  padding-top:var(--radius);
+  background-color:var(--white);
+  height:var(--content-height);
+  white-space:nowrap;
+  overflow:hidden;
+}
+
+/* closed */
+.closed{
+  width:50px;
+}
+.closed .mid{
+  padding-top:0px;
+  padding-bottom:0px;
+  height:0px;
+}
+
+/* button */
+.button{
+  --rad:15px;
+  cursor:pointer;
+  left:calc(var(--x) + calc(25px - var(--rad)));
+  top:calc(var(--y) + calc(25px - var(--rad)));
+  transition:background-color 0.2s ease;
+  background-color:var(--white);
+  height:calc(var(--rad) * 2);
+  width:calc(var(--rad) * 2);
+  border:solid 3px #222;
+  border-radius:100%;
+  position:fixed;
+}
+.button[lock=true]{
+  background-color:#666;
+}
+.button:hover{
+  background-color:#AAA;
+}
